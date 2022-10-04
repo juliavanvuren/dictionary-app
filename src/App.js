@@ -1,10 +1,14 @@
 import './App.css';
+import Dictionary from './Dictionary';
 
 export default function App() {
   return (
-    <div className="App">
-      <h1>Dictionary App</h1>
-      <input className="btn btn-primary" type="submit"></input>
+    <div className="container">
+      <div className="app-content">
+        <h1>Dictionary</h1>
+          <Dictionary />
+      </div>
+      <footer className="app-footer"><small>This project is coded by Julia van Vuren, open-sourced on GitHub &amp; hosted on Netlify</small></footer>
     </div>
   );
 }
