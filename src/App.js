@@ -6,7 +6,7 @@ export default function App() {
     <div className="container">
       <div className="app-content">
         <h1>Dictionary</h1>
-          <Dictionary defaultKeyword="definitions" />
+          <Dictionary defaultKeyword="synonyms" />
       </div>
       <footer className="app-footer"><small>This project is coded by Julia van Vuren, open-sourced on GitHub &amp; hosted on Netlify</small></footer>
     </div>
