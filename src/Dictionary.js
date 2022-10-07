@@ -7,17 +7,22 @@ export default function Dictionary(props) {
 
   let [keyword, setKeyword] = useState(props.defaultKeyword);
   let [results, setResults] = useState(null);
+  let [loaded, setLoaded] = useState(false);
 
   function handleResponse(response) {
     setResults(response.data[0]);
     
   }
+  
+  function search() {
+    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
+    axios.get(apiUrl).then(handleResponse);
+  }
 
   function handleSearch(event){
     event.preventDefault();
-    
-    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
-    axios.get(apiUrl).then(handleResponse);
+    search();
+   
   }
 
   function handleKeywordChange(event) {
@@ -25,6 +30,13 @@ export default function Dictionary(props) {
 
   }
 
+  function load() {
+    setLoaded(true);
+    search();
+  }
+
+  if (loaded) {
+    
   return (
      <div className="Dictionary">
       <section>
@@ -35,4 +47,8 @@ export default function Dictionary(props) {
       <Results results={results} />
     </div>
   );
+  
+} else {
+  return load();
+}
 }
