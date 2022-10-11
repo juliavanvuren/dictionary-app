@@ -1,0 +1,18 @@
+.Meaning .part-of-speech {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.Meaning .definition {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.Meaning .example {
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.5;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}

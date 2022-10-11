@@ -1,12 +1,14 @@
 .Dictionary section {
    max-width: 800px;
   background-color: 
-  #11ac7e;
+  #9ed4cb;
   border-radius: 6px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 15px rgba(47,125,113, 0.2);
   margin: 20px 0;
   padding: 20px 20px;
   text-align: left;
+  font-family: 'Poppins', sans-serif;
+  color: #2f776b;
 }
 
 .Dictionary input {
@@ -14,5 +16,19 @@
   padding: 6px 4px;
   border-radius: 6px;
   border: 1px solid #ddd;
-  color: #333;
+  color: #2f776b;
+  background-color: #f4faf9;
+}
+
+.Dictionary .question {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 10px
+}
+
+.Dictionary .examples {
+  font-size: 13px;
+  font-style: italic;
+  margin-top: 10px;
 }
