@@ -23,9 +23,20 @@
   color: #ddd;
 
 }
-h1 {
+.container .app-content h1 {
   font-family: 'Poppins', sans-serif;
   font-weight:bold;
-  color: #ddd;
+  color: #23ccb0;
   margin-top: 10px;
+}
+
+ .container .app-footer a {
+  text-decoration: none;
+  color: #23ccb0;
+  font-weight: bold;
+  transition: all 200ms ease-in-out;
+}
+.container .app-footer a:hover {
+  color: #ddd;
+  font-weight: bold;
 }

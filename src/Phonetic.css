@@ -4,13 +4,13 @@
   border-radius: 50%;
   text-decoration: none;
   background-color:#2f776b;
-  color: #9ed4cb;
+  color: #23ccb0;
   margin-right: 20px;
   margin-top: 80px;
   transition: all 200ms ease-in-out;
 }
 
 .Phonetic a:hover {
-  background-color: #9ed4cb;
+  background-color: #23ccb0;
   color: #2f776b;
 }
