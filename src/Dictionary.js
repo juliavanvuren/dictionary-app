@@ -54,7 +54,7 @@ export default function Dictionary(props) {
       <form className="search-form" onSubmit={handleSearch}>
         <input defaultValue={props.defaultKeyword} type="search" onChange={handleKeywordChange}/>
       </form>
-      <div className="examples">examples: nature, sunrise, hapiness...</div>
+      <div className="examples">examples: nature, sunrise, happiness...</div>
       </section>
       <Results results={results} />
       <Photos photos={photos} />
